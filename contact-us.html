@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT US</title>
+  <!-- Favi -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon//manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/nav-menu.css">
+</head>
+
+<body>
+  <header>
+    <h1>Ray Romano</h1>
+    <img class="imagenes" src="images/raylogo.png" alt="Ray Romano picture">
+  </header>
+
+  <main>
+    <nav class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="faq.html">FAQs</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact-us.html">Contact Us</a>
+   </nav>
+
+    <section class="contact-form">
+      <h2>CONTACT US</h2>
+      <p>Use this form to send us a message. We would love to hear from you!</p>
+
+      <fieldset>
+        <legend>Tell Us About You</legend>
+        <h3>Personal information</h3>
+        <form id="myMailerForm" action="mailto:huesomr@hotmail.com" method="post">
+          <p>
+            <label for="name"> Name </label>
+            <input type="text" name="name" id="name" placeholder="your name">
+          </p>
+
+          <p>
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email" placeholder="your email" required>
+          </p>
+
+          <p>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              autofocus required>
+          </p>
+
+          <p>
+            <label for="fan">Are you fan of Ray? </label>
+          </p>
+
+          <p>
+            <input type="checkbox" name="fan" id="fan" checked> Yes
+            <input type="checkbox" name="fan"> No
+          </p>
+
+          <p>
+            <label for="options" title="Select an option">what would like to See from Ray Romano in Future</label>
+            <br>
+            <select name="options" id="options">
+              <option value="1">Movies</option>
+              <option value="2">Series</option>
+              <option value="3">Animation</option>
+              <option value="4">Live event</option>
+              <option value="5">Podcast</option>
+            </select>
+          </p>
+
+          <h3>Would you Like to Receive Ray Romano's news?</h3>
+          <p>
+            <label title="Select an option">Yes<input type="radio" name="answer" checked></label>
+            <label title="Select an option">No <input type="radio" name="answer"></label>
+          </p>
+
+          <p>
+            <label for="message">What Is Your Message</label>
+            <br>
+            <textarea name="message" id="message" placeholder="Your message"></textarea>
+          </p>
+
+          <input type="submit" value="Send an Email" name="submit" class="button">
+          <input type="reset" value="Reset" class="button">
+        </form>
+      </fieldset>
+    </section>
+  </main>
+
+  <footer class="navegador">
+    <a title="Link to the Dallas College" href="https://www.dallascollege.edu/pages/default.aspx" target="_blank">Go
+      to Dallas College</a>
+    <a title="Email to Webmaster" href="mailto:huesomr@hotmail.com" target="_blank"> send an email to Webmaster</a>
+  </footer>
+</body>
+
+</html>
