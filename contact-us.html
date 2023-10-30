@@ -23,76 +23,72 @@
   <link rel="manifest" href="images/favicon//manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/nav-menu.css">
 </head>
 
 <body>
+  <!-- header -->
   <header>
     <h1>Ray Romano</h1>
     <img class="imagenes" src="images/raylogo.png" alt="Ray Romano picture">
   </header>
-
+  <nav class="topnav">
+    <a href="index.html"><i class="fa fa-home"></i>Home</a>
+    <a href="faq.html"><i class="fa fa-bars"></i>FAQs</a>
+    <a href="gallery.html"><i class="fa fa-bars"></i>Gallery</a>
+    <a class="active" href="contact-us.html"><i class="fa fa-bars"></i>Contact
+      Us</a>
+    <a href="about-us.html"><i class="fa fa-bars"></i>About Us</a>
+  </nav>
   <main>
-    <nav class="topnav">
-      <a class="active" href="index.html">Home</a>
-      <a href="faq.html">FAQs</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact-us.html">Contact Us</a>
-   </nav>
 
-    <section class="contact-form">
-      <h2>CONTACT US</h2>
-      <p>Use this form to send us a message. We would love to hear from you!</p>
+    <section class="form-section">
+      <h2 class="centertext">CONTACT US</h2>
+      <p class="centertext">Use this form to send us a message. We would love to hear from you!</p>
+      <fieldset style="border:16px solid darkgreen" class="w3-panel w3-hover-border-green">
+        <legend class="centertext">Tell Us About You</legend>
+        <form class="w3-container w3-card-4" id="myMailerForm" action="mailto:huesomr@hotmail.com" method="post">
+          <h3>
+            <label class="w3-text-black" for="name"> Name </label>
+            <input class="w3-input w3-border" type="text" name="name" id="name" placeholder="your name">
+          </h3>
 
-      <fieldset>
-        <legend>Tell Us About You</legend>
-        <h3>Personal information</h3>
-        <form id="myMailerForm" action="mailto:huesomr@hotmail.com" method="post">
-          <p>
-            <label for="name"> Name </label>
-            <input type="text" name="name" id="name" placeholder="your name">
-          </p>
+          <h3>
+            <label class="w3-text-black" for="email">E-mail</label>
+            <input class="w3-input w3-border" type="text" name="email" id="email" placeholder="your email" required>
+          </h3>
 
-          <p>
-            <label for="email">E-mail</label>
-            <input type="text" name="email" id="email" placeholder="your email" required>
-          </p>
+          <h3>
+            <label class="w3-text-black" for="phone">Phone Number</label>
+            <input class="w3-input w3-border" type="tel" name="phone" id="phone" placeholder="123-456-7890"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" autofocus required>
+          </h3>
 
           <p>
-            <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              autofocus required>
-          </p>
+            <label class="w3-text-black" for="news"> Are you Ray fan?</label>
+            <input class="w3-check" type="checkbox" name="news" id="news" checked> Yes
 
           <p>
-            <label for="fan">Are you fan of Ray? </label>
-          </p>
-
-          <p>
-            <input type="checkbox" name="fan" id="fan" checked> Yes
-            <input type="checkbox" name="fan"> No
-          </p>
-
-          <p>
-            <label for="options" title="Select an option">what would like to See from Ray Romano in Future</label>
-            <br>
-            <select name="options" id="options">
-              <option value="1">Movies</option>
-              <option value="2">Series</option>
-              <option value="3">Animation</option>
-              <option value="4">Live event</option>
-              <option value="5">Podcast</option>
+            <label class="w3-text-black" title="Select an option" for="options">What would you like to see from Ray in
+              future?</label>
+            <select class="w3-select" name="options" id="options">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="Movies">Movies</option>
+              <option value="Series">Series</option>
+              <option value="Live Event">Live Event</option>
+              <option value="Podcast">Podcast</option>
             </select>
-          </p>
 
-          <h3>Would you Like to Receive Ray Romano's news?</h3>
-          <p>
-            <label title="Select an option">Yes<input type="radio" name="answer" checked></label>
-            <label title="Select an option">No <input type="radio" name="answer"></label>
           </p>
+          <fieldset>
+            <legend>Would you like to receive Ray Romano's news?</legend>
+            <label title="Select an option">Yes<input class="w3-radio" type="radio" name="answer" checked></label>
+            <label title="Select an option">No <input class="w3-radio" type="radio" name="answer"></label>
+          </fieldset>
 
           <p>
             <label for="message">What Is Your Message</label>
@@ -100,14 +96,15 @@
             <textarea name="message" id="message" placeholder="Your message"></textarea>
           </p>
 
-          <input type="submit" value="Send an Email" name="submit" class="button">
-          <input type="reset" value="Reset" class="button">
+          <input class="w3-button w3-text-black w3-green w3-hover-orange" type="submit" value="Send an Email"
+            name="submit">
+          <input class="w3-button w3-text-black w3-green w3-hover-orange" type="reset" value="Reset">
         </form>
       </fieldset>
     </section>
   </main>
-
-  <footer class="navegador">
+  <!-- Footer -->
+  <footer class="navegador w3-contaiter w3-cyan">
     <a title="Link to the Dallas College" href="https://www.dallascollege.edu/pages/default.aspx" target="_blank">Go
       to Dallas College</a>
     <a title="Email to Webmaster" href="mailto:huesomr@hotmail.com" target="_blank"> send an email to Webmaster</a>

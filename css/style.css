@@ -8,14 +8,15 @@
 
 body {
   background-color: whitesmoke;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
 }
 
 /*--header--*/
-header {
+ header {
   width: 100%;
   background-color: rgb(61, 201, 248);
-}
+  height: auto;
+} 
 
 .imagenes {
   width: 120%;
@@ -23,6 +24,7 @@ header {
   margin-left: auto;
 
 }
+
 /*----------------Navegator----------------*/
 /*
 nav {
@@ -41,17 +43,21 @@ nav {
 */
 /*-----Section----*/
 section {
-  background-color: whitesmoke
+  background-color: whitesmoke;
+  padding: 1%;
+  margin: auto;
 }
+
 
 h1 {
   font-size: 5vw;
   text-align: center;
-  text-shadow:3px 2px 5px lightgreen;
+  text-shadow: 3px 2px 5px lightgreen;
   color: darkgreen;
   font-family: Arial, Helvetica, sans-serif;
   padding: 2vw;
 }
+
 
 h2,
 h3,
@@ -59,32 +65,47 @@ h4,
 h5,
 dt {
   color: darkgreen;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-top: 1em;
   font-family: Arial, Helvetica, sans-serif;
+  
 
 }
 
 p {
   color: black;
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1%;
 
 }
 
 dt {
   color: darkgreen;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-bottom: 5px;
+}
+
+dd {
+  font-size: 1.2rem;
 }
 
 dl {
   color: black;
   font-size: 150%;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 20px;
+  padding: 1px;
+}
+
+figcaption {
+  font-size: 1rem;
+}
+
+.artop {
+  text-align: center;
+  font-size: 2rem;
 }
 
 /*---footer---*/
@@ -92,8 +113,8 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 25px;
-  text-align: left;
-  background-color: rgb(0, 191, 255);
+  text-align: center;
+  background-color: rgb(61, 201, 248);
 }
 
 a:link {
@@ -111,66 +132,36 @@ a:hover {
   font-size: 100%;
   background-color: orange;
   color: black;
-}
+} 
 
 
 /*--------------------Faqs------------------------------*/
+ol {
+  margin-left: 1% ;
+}
+
 li {
-  font-size: 120%;
+  font-size: 130%;
   text-align: left;
-  padding: 2px;
 }
 
-/*------------------- Table---------------------------*/
-[id = awards] {
-  text-align: center;
-  font-size: 1.5vw;
- }
-
-table {
-  border-collapse: collapse;
-  width: 50%;
-  margin: auto;
-}
-
-table caption {
-  font-weight: bold;
-  font-size: 1.7rem;
-  padding-top: 10px;
-  padding-bottom: 2px;
-}
-
-th,
-td {
-  font-weight: 200;
-  font-size: 150%;
-  text-align: center;
-  padding: 15px;
-}
-
-tr {
-  background-color: lightblue;
-}
-
-tbody tr:nth-child(even) {
-  background-color: rgb(109, 204, 236);
-}
-
-tbody tr:hover {
-  background-color: orange;
+section li a:hover {
+  font-size: 120%;
+  text-decoration: none;
+  color: darkgreen;
+  border-bottom: 2px solid
 }
 
 /*------------------------Contact Form----------------*/
-fieldset {
+/*fieldset {
   border: 2px dashed darkgreen;
   font-size: 110%;
   max-width: 70%;
   margin: 25px auto;
-}
+}*/
 
 fieldset legend {
   font-size: 200%;
-  color: darkgreen;
   padding: 20px;
 }
 
@@ -206,7 +197,50 @@ input radio {
   color: orange;
 }
 
-.button:hover {
+/*.button:hover {
   background-color: orange;
   color: white;
+}*/
+
+.centertext {
+  text-align: center;
+}
+
+/*------------------- Table---------------------------*/
+[id = awards] {
+  text-align: center;
+  font-size: 3rem;
+ }
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: auto;
+}
+
+table caption {
+  font-weight: bold;
+  font-size: 1rem;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+
+th,
+td {
+  font-weight: 200;
+  font-size: 120%;
+  text-align: center;
+  padding: 15px;
+}
+
+tr {
+  background-color: lightblue;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(109, 204, 236);
+}
+
+tbody tr:hover {
+  background-color: orange;
 }

@@ -18,13 +18,18 @@ section{
 
 
 .imagenes {
-	position: absolute;
-	top: 1rem;
-	right: 8%;
-	z-index: 5;
-	width: 250px;
-	max-width: 15vw;
-	height: 250px;
+  height: 96px;
+  float: right;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  margin-right: 30px;
+  z-index: 5;
+  width: auto;
+  max-width: 15vw;
+  height: auto;
+  display: block;
+  clear: both;
 }
 
 /* figures and images */
@@ -41,6 +46,7 @@ article {
 }
 
 article h3 {
+  text-align: center;
   margin-top: 0;
   padding: 10px 10vw 30px;
   background-color: rgb(61, 201, 248);
@@ -52,7 +58,6 @@ article>p {
 }
 
 figure {
-  float: right;
   padding: 15px;
   margin: 3vw 0;
 }

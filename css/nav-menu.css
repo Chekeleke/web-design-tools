@@ -3,8 +3,10 @@
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: rgb(0, 191, 255);
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
   overflow: hidden;
   position: sticky;
+  color: black;
 }
 
 /* Style the links inside the navigation bar */
